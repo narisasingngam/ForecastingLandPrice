@@ -8,7 +8,6 @@ const InputHeader = ({
 }) => {
   return (
     <div class="d-flex flex-column bd-highlight mb-3">
-      <h3 style={{ textAlign: "center" }}>Reference land Map</h3>
       <div class="d-flex align-self-center">
         <input
           class="margin-input form-control w-100"
@@ -19,10 +18,10 @@ const InputHeader = ({
         ></input>
         <button
           type="button"
-          class="btn btn-primary w-70"
+          class="btn w-70 btn-input"
           onClick={handleClickSearchBtn}
         >
-          Primary
+          Enter
         </button>
       </div>
     </div>

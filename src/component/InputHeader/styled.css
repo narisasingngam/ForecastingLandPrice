@@ -1,3 +1,9 @@
 .margin-input{
     margin-right: 5px;
 }
+
+.btn-input{
+    background-color: #58B2DC;
+    font-weight: bold;
+    color: white;
+}

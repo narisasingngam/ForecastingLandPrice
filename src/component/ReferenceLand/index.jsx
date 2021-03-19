@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "leaflet";
-import { MapContainer, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, GeoJSON, TileLayer, Marker } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import "leaflet/dist/leaflet.css";
 import reflots from "./../../data/reflotPoint.json";
@@ -45,11 +45,7 @@ const ReferenceLand = () => {
               iconAnchor: [12, 41],
             })
           }
-        >
-          <Popup>
-            <div>Selected land</div>
-          </Popup>
-        </Marker>
+        />
         <GeoJSON
           style={{
             fillOpacity: 0.5,
