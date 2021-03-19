@@ -1,14 +1,14 @@
 import React, {useCallback} from "react";
-import { MapContainer, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
-import reflot from "./../data/reflot.json";
-import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
+import { MapContainer, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
-import landValueRange from "./../utils/landValueRange";
+import "leaflet/dist/leaflet.css";
+import reflot from './../../data/reflot.json';
+import landValueRange from "./../../utils/landValueRange";
 
 const CENTER_POINT = [13.82826268357157, 100.558089583016496];
 
-const MyMap = () => {
+const ReferenceLand = () => {
 
   const onEachLand = (land, layer) => {
     const landValue = land.properties.LAND_VALUE;
@@ -65,4 +65,4 @@ const MyMap = () => {
   );
 };
 
-export default MyMap;
+export default ReferenceLand;
